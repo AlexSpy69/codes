@@ -296,30 +296,3 @@ class core_Transposition:
             return square_new.to_string()
         else:
             return square_new.to_string().rstrip(self.filler)
-
-
-class core_Binstuff:
-    def __init__(self):
-        super(core_Binstuff, self).__init__()
-    
-    @staticmethod
-    def char_to_bin(char):
-        return str(bin(ord(char)))[2:]
-
-    def charrow_to_bin(self, charrow):
-        output = []
-        for letter in charrow:
-            output.append(self.char_to_bin(letter))
-        return output
-    
-    @staticmethod
-    def bin_to_char(bin):
-        return str(chr(int(bin, 2)))
-
-    def bin_to_charrow(self, bin):
-        output = ''
-        for i in bin:
-            print(self.bin_to_char(i))
-            output += self.bin_to_char(i)
-        return output
-
