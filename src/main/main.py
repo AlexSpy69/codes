@@ -1,6 +1,6 @@
 import random
 import sys
-from codes.core import *
+from core import *
 
 random.seed()
 
@@ -18,7 +18,7 @@ class Atbash:
 
 
 class SimpleSubstitution:
-    def __init__(self, key='l'*25):
+    def __init__(self, key='a'*25):
         super(SimpleSubstitution, self).__init__()
         self.type = 'strkey'
         self.key = key
@@ -222,7 +222,7 @@ class HomophonicSubstitution:
 
 
 class Autokey:
-    def __init__(self, key='beispiel'):
+    def __init__(self, key='a'):
         super(Autokey, self).__init__()
         self.type = 'strkey'
         self.key = key.upper()
@@ -267,7 +267,7 @@ class Autokey:
 
 
 class Vigenere:
-    def __init__(self, key='beispiel'):
+    def __init__(self, key='a'):
         super(Vigenere, self).__init__()
         self.type = 'strkey'
         self.key = key.upper()
@@ -311,7 +311,7 @@ class Vigenere:
 
 
 class Beaufort:
-    def __init__(self, key='beispiel'):
+    def __init__(self, key='a'):
         super(Beaufort, self).__init__()
         self.type = 'strkey'
         self.key = key.upper()
