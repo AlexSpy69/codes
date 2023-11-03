@@ -1,6 +1,6 @@
 import random
 import sys
-from core import *
+from codes.core import *
 
 random.seed()
 
